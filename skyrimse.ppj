@@ -43,7 +43,7 @@
         </ZipFile>
     </ZipFiles>
     <!-- This will remove any *.bsa files in this directory *after* the build, if there are any. Set UseInBuild="false" to disable. -->
-    <PostBuildEvent Description="Post-Build Remove BSA Files" UseInBuild="false">
+    <PostBuildEvent Description="Post-Build Remove BSA Files" UseInBuild="true">
         <Command>del /s /q /f *.bsa</Command>
     </PostBuildEvent>
 </PapyrusProject>
