@@ -16,7 +16,7 @@
         <Variable Name="ModsFolder" Value="C:\[YOUR MODS FOLDER]" />
     </Variables>
     <Imports>
-        <!-- <Import>@ModsFolder\SKSE64\Scripts\Source</Import> -->
+        <Import>D:\Mod Organizer 2 - Mods Overwrite\SSEModCreation\Mods\SKSE64\Scripts\Source</Import>
         <Import>D:\Mod Organizer 2 - Mods Overwrite\SSEModCreation\Mods\SkyUI SDK\Scripts\Source</Import>
         <Import>D:\SteamLibrary\steamapps\common\Skyrim Special Edition\Data\Scripts\Source</Import>
     </Imports>
