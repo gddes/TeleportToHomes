@@ -10,7 +10,8 @@
   - Make the fourth package with all houses included with MCM.
 
 ------------BreakDown------------
-Here is a list of what is currently done and what will be done in the future.
+
+ Here is a list of what is currently done and what will be done in the future.
 
 Currently Done:
   - Breezehome	
