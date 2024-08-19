@@ -2,7 +2,7 @@
  Allows the user to teleport to the various homes of skyrim via Spells. This mod is still early in development. Main thing I want is four packages: Base Game Houses without MCM, Base Game Houses with MCM, All AE Houses without MCM, and All AE Houses with MCM. It's pretty simple code wise, just takes a lot of testing to make sure everything works correct. For the MCM, it will involve seeing the player has the spells in there inventory and giving them the option to either remove or add them. Probably will include an add all or remove all button. 
 
  TODO: 
-  -- Done -- Make the first package without MCM. 
+  -- Done -- Make the first package without MCM.
   - Code the MCM menu. < Current Goal
   - Make the second package with MCM.
   - Make the third package with all houses included without MCM.
@@ -15,7 +15,7 @@
 
 Currently Done:
   - Breezehome	
-  - Hjerim	Windhelm	
+  - Hjerim	
   - Honeyside	
   - Proudspire Manor
   - Severin Manor
