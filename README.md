@@ -3,7 +3,10 @@
 This is a mod for Skyrim AE. It has books that allow the player to learn the spells to teleport to the house of there choice. All houses have a book in different locations, try looking around to find the books. They are often located close to the entrances of the homes or somewhere noticeable.
  
 ### What stage are you at?
-This mod is still early in development. Main thing I want is four packages: Base Game Houses w/ DLC without MCM, Base Game Houses w/ DLC with MCM, All AE Houses including Base Game & DLC without MCM, and All AE Houses including Base Game & DLC with MCM. For the MCM, it will involve seeing if the player has the spells in their spell inventory and giving them the option to either remove or add them. Probably will include an add all or remove all button. 
+This mod is still early in development. Main thing I want is four packages: Base Game Houses w/ DLC without MCM, Base Game Houses w/ DLC with MCM, All AE Houses including Base Game & DLC without MCM, and All AE Houses including Base Game & DLC with MCM. For the MCM, it will involve seeing if the player has the spells in their spell inventory and giving them the option to either remove or add them. Probably will include an add all or remove all button.
+
+### What version is this made for?
+This mod is made for Skyrim AE version 1.6.1170.0. 
 
 ### Why make this mod?
 This mod has been done before and I'm sure they are great mods, but I wanted something that is all encompassing and I know will personally work well after I'm done testing hence this is mod. Hopefully you like all the options I'm trying to make, and I can have a mod I will be proud of. 
