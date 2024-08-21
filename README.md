@@ -3,7 +3,7 @@
 This is a mod for Skyrim AE. It has books that allow the player to learn the spells to teleport to the house of there choice. All houses have a book in different locations within the homes, try looking around to find the book for that specific home. They are often located close to the entrances of the homes or somewhere noticeable.
  
 ### What stage are you at?
-This mod is still early in development. Main thing I want is four packages: Base Game Houses w/ DLC without MCM, Base Game Houses w/ DLC with MCM, All AE Houses including Base Game & DLC without MCM, and All AE Houses including Base Game & DLC with MCM. For the MCM, it will involve seeing if the player has the spells in their spell inventory and giving them the option to either remove or add them. Probably will include an add all or remove all button.
+This mod is finished for now. Main thing I wanted is four packages: Base Game Houses w/ DLC without MCM, Base Game Houses w/ DLC with MCM, All AE Houses including Base Game & DLC without MCM, and All AE Houses including Base Game & DLC with MCM. For the MCM, it will involve seeing if the player has the spells in their spell inventory and giving them the option to either remove or add them.
 
 ### What version is this made for?
 This mod is made for Skyrim AE version 1.6.1170.0. 
@@ -34,14 +34,6 @@ It's a breakdown of what I have left to do, the houses that are already done, an
 
 ### ------------BreakDown------------
 
- TODO: 
-  - -- Done -- Make the first package without MCM.
-  - Code the MCM menu. < Current Goal
-  - Make the second package with MCM.
-  - Make the third package with all houses included without MCM.
-  - Add the CC houses to the MCM list.
-  - Make the fourth package with all houses included with MCM.
-
  Here is a list of what is currently done and what will be done in the future.
 
 Currently Done:
@@ -54,15 +46,16 @@ Currently Done:
   - Windstad Manor
   - Lakeview Manor
   - Heljarchen Hall
+  - MCM
+  - Bloodchill Cavern
+  - Dead Man's Dread
+  - Gallows Hall
+  - Goldenhills Plantation
+  - Hendraheim
+  - Myrwatch
+  - Nchuanthumz
+  - Shadowfoot Sanctum
+  - Tundra Homestead\
 
-In the future:
- - MCM
- - Bloodchill Cavern
- - Dead Man's Dread
- - Gallows Hall
- - Goldenhills Plantation
- - Hendraheim
- - Myrwatch
- - Nchuanthumz
- - Shadowfoot Sanctum
- - Tundra Homestead
+  In the future:
+  - Maybe Modded Homes
