@@ -30,6 +30,34 @@ Spell Property sWindstadManorSpell Auto
 bool Property hasHeljarchenHallSpell Auto
 Spell Property sHeljarchenHallSpell Auto
 
+;------------ AE Houses -----------------
+bool Property hasBloodchillCavernSpell Auto
+Spell Property sBloodchillCavernSpell Auto
+
+bool Property hasDeadMansDreadSpell Auto
+Spell Property sDeadMansDreadSpell Auto
+
+bool Property hasGallowsHallSpell Auto
+Spell Property sGallowsHallSpell Auto
+
+bool Property hasGoldenhillsPlantationSpell Auto
+Spell Property sGoldenhillsPlantationSpell Auto
+
+bool Property hasHendraheimSpell Auto
+Spell Property sHendraheimSpell Auto
+
+bool Property hasMyrwatchSpell Auto
+Spell Property sMyrwatchSpell Auto
+
+bool Property hasNchuanthumzSpell Auto
+Spell Property sNchuanthumzSpell Auto
+
+bool Property hasShadowfootSanctumSpell Auto
+Spell Property sShadowfootSanctumSpell Auto
+
+bool Property hasTundraHomesteadSpell Auto
+Spell Property sTundraHomesteadSpell Auto
+
 Event OnConfigInit()
     ModName = "Teleport To Homes"
     Pages = new string[1]
@@ -45,12 +73,24 @@ Event OnPageReset(string page)
     AddToggleOptionST("ProudspireManorSpell", "Proudspire Manor Spell", hasSpell(sProudspireManorSpell))
     AddToggleOptionST("VlindrelHallSpell", "Vlindrel Hall Spell", hasSpell(sVlindrelHallSpell))
 
-	SetCursorPosition(1)
+	AddEmptyOption()
 	AddHeaderOption("DLC Homes")
 	AddToggleOptionST("SeverinHouseSpell", "Severin House Spell", hasSpell(sSeverinHouseSpell))
     AddToggleOptionST("LakeviewManorSpell", "Lakeview Manor Spell", hasSpell(sLakeviewManorSpell))
     AddToggleOptionST("WindstadManorSpell", "Windstad Manor Spell", hasSpell(sWindstadManorSpell))
     AddToggleOptionST("HeljarchenHallSpell", "Heljarchen Hall Spell", hasSpell(sHeljarchenHallSpell))
+
+	SetCursorPosition(1)
+	AddHeaderOption("Creation Club Homes")
+	AddToggleOptionST("BloodchillCavernSpell", "Bloodchill Cavern Spell", hasSpell(sBloodchillCavernSpell))
+	AddToggleOptionST("DeadMansDreadSpell", "Dead Man's Dread Spell", hasSpell(sDeadMansDreadSpell))
+	AddToggleOptionST("GallowsHallSpell", "Gallows Hall Spell", hasSpell(sGallowsHallSpell))
+	AddToggleOptionST("GoldenhillsPlantationSpell", "Goldenhills Plantation Spell", hasSpell(sGoldenhillsPlantationSpell))
+	AddToggleOptionST("HendraheimSpell", "Hendraheim Spell", hasSpell(sHendraheimSpell))
+	AddToggleOptionST("MyrwatchSpell", "Myrwatch Spell", hasSpell(sMyrwatchSpell))
+	AddToggleOptionST("NchuanthumzSpell", "Nchuanthumz Spell", hasSpell(sNchuanthumzSpell))
+	AddToggleOptionST("ShadowfootSanctumSpell", "Shadowfoot Sanctum Spell", hasSpell(sShadowfootSanctumSpell))
+	AddToggleOptionST("TundraHomesteadSpell", "Tundra Homestead Spell", hasSpell(sTundraHomesteadSpell))
 EndEvent
 
 state BreezeHomeSpell
@@ -185,6 +225,141 @@ state HeljarchenHallSpell
 
 	event OnHighlightST()
 		SetInfoText("Select to add/remove the Heljarchen Hall Home Spell to/from the character.")
+	endEvent
+endState
+
+state BloodchillCavernSpell
+	event OnSelectST()
+        hasBloodchillCavernSpell = hasSpell(sBloodchillCavernSpell)
+		DetermineSpellState(hasBloodchillCavernSpell, sBloodchillCavernSpell)
+	endEvent
+
+	event OnDefaultST()
+		hasBloodchillCavernSpell = hasSpell(sBloodchillCavernSpell)
+	endEvent
+
+	event OnHighlightST()
+		SetInfoText("Select to add/remove the Bloodchill Cavern Home Spell to/from the character.")
+	endEvent
+endState
+
+state DeadMansDreadSpell
+	event OnSelectST()
+        hasDeadMansDreadSpell = hasSpell(sDeadMansDreadSpell)
+		DetermineSpellState(hasDeadMansDreadSpell, sDeadMansDreadSpell)
+	endEvent
+
+	event OnDefaultST()
+		hasDeadMansDreadSpell = hasSpell(sDeadMansDreadSpell)
+	endEvent
+
+	event OnHighlightST()
+		SetInfoText("Select to add/remove the Dead Man's Dread Home Spell to/from the character.")
+	endEvent
+endState
+
+state GallowsHallSpell
+	event OnSelectST()
+        hasGallowsHallSpell = hasSpell(sGallowsHallSpell)
+		DetermineSpellState(hasGallowsHallSpell, sGallowsHallSpell)
+	endEvent
+
+	event OnDefaultST()
+		hasGallowsHallSpell = hasSpell(sGallowsHallSpell)
+	endEvent
+
+	event OnHighlightST()
+		SetInfoText("Select to add/remove the Gallows Hall Home Spell to/from the character.")
+	endEvent
+endState
+
+state GoldenhillsPlantationSpell
+	event OnSelectST()
+        hasGoldenhillsPlantationSpell = hasSpell(sGoldenhillsPlantationSpell)
+		DetermineSpellState(hasGoldenhillsPlantationSpell, sGoldenhillsPlantationSpell)
+	endEvent
+
+	event OnDefaultST()
+		hasGoldenhillsPlantationSpell = hasSpell(sGoldenhillsPlantationSpell)
+	endEvent
+
+	event OnHighlightST()
+		SetInfoText("Select to add/remove the Goldenhills Plantation Home Spell to/from the character.")
+	endEvent
+endState
+
+state HendraheimSpell
+	event OnSelectST()
+        hasHendraheimSpell = hasSpell(sHendraheimSpell)
+		DetermineSpellState(hasHendraheimSpell, sHendraheimSpell)
+	endEvent
+
+	event OnDefaultST()
+		hasHendraheimSpell = hasSpell(sHendraheimSpell)
+	endEvent
+
+	event OnHighlightST()
+		SetInfoText("Select to add/remove the Hendraheim Home Spell to/from the character.")
+	endEvent
+endState
+
+state MyrwatchSpell
+	event OnSelectST()
+        hasMyrwatchSpell = hasSpell(sMyrwatchSpell)
+		DetermineSpellState(hasMyrwatchSpell, sMyrwatchSpell)
+	endEvent
+
+	event OnDefaultST()
+		hasMyrwatchSpell = hasSpell(sMyrwatchSpell)
+	endEvent
+
+	event OnHighlightST()
+		SetInfoText("Select to add/remove the Myrwatch Home Spell to/from the character.")
+	endEvent
+endState
+
+state NchuanthumzSpell
+	event OnSelectST()
+        hasNchuanthumzSpell = hasSpell(sNchuanthumzSpell)
+		DetermineSpellState(hasNchuanthumzSpell, sNchuanthumzSpell)
+	endEvent
+
+	event OnDefaultST()
+		hasNchuanthumzSpell = hasSpell(sNchuanthumzSpell)
+	endEvent
+
+	event OnHighlightST()
+		SetInfoText("Select to add/remove the Nchuanthumz Home Spell to/from the character.")
+	endEvent
+endState
+
+state ShadowfootSanctumSpell
+	event OnSelectST()
+        hasShadowfootSanctumSpell = hasSpell(sShadowfootSanctumSpell)
+		DetermineSpellState(hasShadowfootSanctumSpell, sShadowfootSanctumSpell)
+	endEvent
+
+	event OnDefaultST()
+		hasShadowfootSanctumSpell = hasSpell(sShadowfootSanctumSpell)
+	endEvent
+
+	event OnHighlightST()
+		SetInfoText("Select to add/remove the Shadowfoot Sanctum Home Spell to/from the character.")
+	endEvent
+endState
+
+state TundraHomesteadSpell
+	event OnSelectST()
+        hasTundraHomesteadSpell = hasSpell(sTundraHomesteadSpell)
+		DetermineSpellState(hasTundraHomesteadSpell, sTundraHomesteadSpell)
+	endEvent
+
+	event OnDefaultST()
+		hasTundraHomesteadSpell = hasSpell(sTundraHomesteadSpell)
+	endEvent
+
+	event OnHighlightST()
+		SetInfoText("Select to add/remove the Tundra Homestead Home Spell to/from the character.")
 	endEvent
 endState
 
